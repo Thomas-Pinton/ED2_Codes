@@ -164,7 +164,7 @@ void Busca_Largura (Grafo *G, int s) {
       int u = dequeue (Q);
       Vertice* v = &V[u];
       Vertice* prox = V[u].proximo;
-      while (V[u] != NULL)
+      while (V[u] != NULL)  
       {
         enqueue(Q, prox->identificador);
         if (prox->cor == BRANCO)
